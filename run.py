@@ -8,9 +8,12 @@ def main():
     Essa é a função principal.
     """
 
-def add():
+def add() -> int:
     """
     Função da operação de adição.
+
+    Returns:
+        result: resultado da operação.
     """
     
     numOne = int(input("Type the first number: "))
@@ -19,3 +22,5 @@ def add():
     result = numOne + numTwo
 
     print(f"The result is {result}")
+
+    return result
